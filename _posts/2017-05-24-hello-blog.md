@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Hello, Blog"
+title:  "你好，博客"
 categories: 杂七杂八
 tags:  
 author: 风之筝
