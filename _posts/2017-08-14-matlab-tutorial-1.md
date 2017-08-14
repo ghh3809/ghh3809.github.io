@@ -20,11 +20,11 @@ MATLAB是一款著名的商业数学软件，工科生基本上免不了经常�
 
 ## 简介
 
-![](https://github.com/ghh3809/ghh3809.github.io/tree/master/_posts/_pic/20170814_matlab.jpg "MATLAB")
+![](https://raw.githubusercontent.com/ghh3809/ghh3809.github.io/master/_posts/_pic/20170814_matlab.jpg "MATLAB")
 
 MATLAB，其“全称”叫做Matrix Laboratory(矩阵实验室)。从名字上我们就可以了解到，其基本运算单位为**矩阵**(Matrix)。它是由美国mathworks公司发布的，主要面对科学计算、可视化以及交互式程序设计的高科技计算环境。嗯……听起来就很高端。事实上，MATLAB的功能确实非常强大，除了MATLAB语言的主要部分，其众多工具箱为用户提供了大量方便实用的处理工具。例如下图就是MATLAB小波工具箱的使用。
 
-![](https://github.com/ghh3809/ghh3809.github.io/tree/master/_posts/_pic/20170814_matlab_tool.jpg "小波工具箱")
+![](https://raw.githubusercontent.com/ghh3809/ghh3809.github.io/master/_posts/_pic/20170814_matlab_tool.jpg "小波工具箱")
 
 你可能会问：这么高端上档次的东西，学起来岂不是很困难？额，显然不会啊，因为…………………………高端的部分我们一般用不到啊(手动微笑)
 
@@ -62,39 +62,39 @@ MATLAB各个版本的安装方法大同小异，这里以MATLAB R2016a为例介�
 
 首先[点此下载MATLAB R2016a的安装包及破解包](https://pan.baidu.com/s/1c20AVTI)，提取密码：abv1。下载完成后可以看到文件夹内有三个文件，其中**R2016a_win64**为安装包，**MATLAB 2016a Win64 Crack**为破解包。
 
-![](https://github.com/ghh3809/ghh3809.github.io/tree/master/_posts/_pic/20170814_download.jpg)
+![](https://raw.githubusercontent.com/ghh3809/ghh3809.github.io/master/_posts/_pic/20170814_download.png)
 
 ### 2. 安装
 
 1.成功下载后，即可进行安装。选择 R2016a_win64.part1.rar 进行解压，软件会自动完成两部分的解压。解压完成后将得到的 R2016a_win64.iso 文件加载至虚拟光驱，双击"setup.exe"即可进行安装。
 
-![](https://github.com/ghh3809/ghh3809.github.io/tree/master/_posts/_pic/20170814_step1.jpg)
+![](https://raw.githubusercontent.com/ghh3809/ghh3809.github.io/master/_posts/_pic/20170814_step1.jpg)
 
 2.稍等片刻，待安装程序启动后，选择**使用文件安装密钥 不需要Internet连接**选项，并接受许可协议的条款。
 
-![](https://github.com/ghh3809/ghh3809.github.io/tree/master/_posts/_pic/20170814_step2.jpg)
+![](https://raw.githubusercontent.com/ghh3809/ghh3809.github.io/master/_posts/_pic/20170814_step2.jpg)
 
 3.选择**我已有我的许可证的文件安装密钥**，输入密钥：**09806-07443-53955-64350-21751-41297**，随后一路下一步即可，直至安装完毕
 
-![](https://github.com/ghh3809/ghh3809.github.io/tree/master/_posts/_pic/20170814_step3.jpg)
+![](https://raw.githubusercontent.com/ghh3809/ghh3809.github.io/master/_posts/_pic/20170814_step3.jpg)
 
 ### 3. 破解
 
 1.打开MATLAB安装目录（默认在C:\Program Files\MATLAB\R2016a），打开文件**MATLAB安装目录\bin\win64\activate_matlab.exe**，选择**在不选择Internet情况下手动激活**，并点击下一步。
 
-![](https://github.com/ghh3809/ghh3809.github.io/tree/master/_posts/_pic/20170814_step4.jpg)
+![](https://raw.githubusercontent.com/ghh3809/ghh3809.github.io/master/_posts/_pic/20170814_step4.jpg)
 
 2.解压之前下载的**MATLAB 2016a Win64 Crack.rar**，可以看到**license_standalone.lic**文件，此文件即为许可证文件。在安装程序中选择**输入许可证文件的完成路径（包括文件名）**，点击浏览，选择该许可证文件，再次点击下一步，即可激活完成。
 
-![](https://github.com/ghh3809/ghh3809.github.io/tree/master/_posts/_pic/20170814_step5.jpg)
+![](https://raw.githubusercontent.com/ghh3809/ghh3809.github.io/master/_posts/_pic/20170814_step5.jpg)
 
 3.此时不要打开软件，将解压**MATLAB 2016a Win64 Crack.rar**得到的**MATLAB Production Server\R2016a\bin\win64**文件夹中的三个dll文件，覆盖到**MATLAB安装目录\bin\win64**（默认为C:\Program Files\MATLAB\R2016a\bin\win64）目录下，并选择“复制与替换”。至此，MATLAB R2016a安装完成。
 
-![](https://github.com/ghh3809/ghh3809.github.io/tree/master/_posts/_pic/20170814_step6.jpg)
+![](https://raw.githubusercontent.com/ghh3809/ghh3809.github.io/master/_posts/_pic/20170814_step6.jpg)
 
 4.打开MATLAB，我们即可看到其主界面。终于打开了MATLAB是不是有点小欣喜呢！下一节，我们将对MATLAB的界面进行介绍。
 
-![](https://github.com/ghh3809/ghh3809.github.io/tree/master/_posts/_pic/20170814_main.jpg)
+![](https://raw.githubusercontent.com/ghh3809/ghh3809.github.io/master/_posts/_pic/20170814_main.png)
 
 
 
