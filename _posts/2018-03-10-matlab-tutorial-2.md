@@ -27,7 +27,7 @@ author: 风之筝
 
 如下图所示。下面我们一一进行介绍。
 
-![](https://raw.githubusercontent.com/ghh3809/ghh3809.github.io/master/_posts/_pic/20170310_windows.png)
+![](https://raw.githubusercontent.com/ghh3809/ghh3809.github.io/master/_posts/_pic/20180310_windows.png)
 
 ### 命令行窗口
 
@@ -66,7 +66,7 @@ plot(a,b);
 
 点击菜单栏中“编辑器”->“保存”，将脚本文件命名为“Script2_1.m”将结果直接保存至**当前文件夹**。再次点击“运行”，即可出现下图所示结果。
 
-![](https://raw.githubusercontent.com/ghh3809/ghh3809.github.io/master/_posts/_pic/20170814_first_code.png)
+![](https://raw.githubusercontent.com/ghh3809/ghh3809.github.io/master/_posts/_pic/20180310_first_code.png)
 
 至于为什么要保存至当前文件夹，我们在介绍当前文件夹窗口时将会再次介绍。
 
@@ -74,7 +74,7 @@ plot(a,b);
 
 运行完刚刚的程序，可以看到我们的工作区中目前有a，ans，b三个变量。我们双击a变量，即可打开变量窗口。可以看到下图所示的内容。
 
-![](https://raw.githubusercontent.com/ghh3809/ghh3809.github.io/master/_posts/_pic/20170814_variable.png)
+![](https://raw.githubusercontent.com/ghh3809/ghh3809.github.io/master/_posts/_pic/20180310_variable.png)
 
 “1×10 double”表明该变量的大小为1行×10列，每个元素的类型均为double（双精度浮点数）。以此点击别的变量，我们可以看到对应的变量内容。
 
@@ -92,7 +92,7 @@ plot(a,b);
 
 PS：在当前文件夹中，可以进行各种常规资源管理器操作，例如复制、粘贴、重命名等。
 
-![](https://raw.githubusercontent.com/ghh3809/ghh3809.github.io/master/_posts/_pic/20170814_current_folder.png)
+![](https://raw.githubusercontent.com/ghh3809/ghh3809.github.io/master/_posts/_pic/20180310_current_folder.png)
 
 ### 工作区
 
