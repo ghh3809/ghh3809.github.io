@@ -18,7 +18,7 @@ author: 风之筝
 
 <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
 
-可能你已经注意到了，我们之前的语句都是在命令行窗口中进行编写的。这样虽然可以及时得到反馈，但是如果我们想要同时执行多个语句则是非常困难的。因此我们将利用MATLAB的脚本m文件，使其从一个“大计算器”变成一个“变成工具”。
+可能你已经注意到了，我们之前的语句都是在命令行窗口中进行编写的。这样虽然可以及时得到反馈，但是如果我们想要同时执行多个语句则是非常困难的。因此我们将利用MATLAB的脚本m文件，使其从一个“大计算器”变成一个“编程工具”。
 
 顺序执行是程序执行过程中最基本的执行方式，在MATLAB中也不需要对其进行任何的控制，只需要把要执行的命令按顺序写下来就可以了。例如我们需要对下面的方程组进行求解：
 
@@ -79,11 +79,11 @@ end
 ``` matlab
 (3>2) && (2~=3); % 结果为1（TRUE）
 ~(4<=4); % 结果为0（FALSE）
-(3>4) || 5； % 结果为1（TRUE）
+(3>4) || 5; % 结果为1（TRUE）
 ~0; % 结果为1（TRUE）
 ```
 
-> 下面两点写给“久经沙场”的程序员：
+> 下面三点写给“久经沙场”的程序员：
 > - MATLAB提供位运算符，分别是&（按位与），&#124;（按位或），~（按位非）
 > - MATLAB提供的逻辑运算符支持短路操作
 > - MATLAB中不提供++、+=等类似的赋值操作符
@@ -145,7 +145,7 @@ if weight >= 5
 	if weight >= 10
 		price = unitPrice * weight * 0.7
 	else
-		price = unitPrice * weight * 0.7
+		price = unitPrice * weight * 0.8
 	end
 else
 	price = unitPrice * weight
