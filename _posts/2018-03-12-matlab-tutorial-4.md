@@ -2,7 +2,7 @@
 layout: post
 title:  "同学，你掉了一份MATLAB入门教程(4)"
 categories: MATLAB
-tags:  MATLAB 语言
+tags:  MATLAB 流程控制
 author: 风之筝
 ---
 
