@@ -29,7 +29,7 @@ type: page
 ## 联系我
 
 * GitHub：[ghh3809](https://github.com/ghh3809)
-* E-mail：ghh3809@163.com
+* E-mail：[ghh3809@163.com](mailto:ghh3809@163.com)
 * 微博：[风_之筝](http://weibo.com/5893909585)
 * Bilibili：[风之筝3809](https://space.bilibili.com/64501399)
 * 5Sing：[ghh3809](http://5sing.kugou.com/35534696)
