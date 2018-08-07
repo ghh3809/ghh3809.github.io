@@ -360,15 +360,17 @@ public void morrisPreOrderTraversal(TreeNode root) {
 }
 ```
 
-后序遍历相比中序遍历稍微复杂一些，但是后序遍历也有其特性：若一个节点是右孩子，或该节点是左孩子但是没有兄弟节点，则访问完该节点后立刻会访问该节点的父节点。推广到Morris遍历里，可以得到：
+后序遍历相比中序遍历稍微复杂一些，但是后序遍历也有其特性：若一个节点是右孩子，或该节点是左孩子但是没有兄弟节点，则访问完该节点后立刻会访问该节点的父节点。
 
-![](https://raw.githubusercontent.com/ghh3809/ghh3809.github.io/master/_posts/_pic/20180806_postorder.png)
+![](https://raw.githubusercontent.com/ghh3809/ghh3809.github.io/master/_posts/_pic/20180806_morris_post.png)
+
+推广到Morris遍历里，可以得到：
 
 ```
 当访问到任何节点C的前驱节点B时，由B到C的路径（不包括节点C）即为之后的访问顺序。
 ```
 
-因此所有的访问过程可以化为由B到C的访问。得到的Morris后序遍历程序如下，注意为了保证程序能够顺利访问右子树，为程序添加了一个哨兵节点：
+因此所有的访问过程可以化为由B到C的访问。得到的Morris后序遍历程序如下，注意为了保证程序能够顺利访问右子树，为根节点添加了一个哨兵节点：
 
 ``` java
 public void morrisPostOrderTraversal(TreeNode root) {
