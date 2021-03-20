@@ -48,7 +48,7 @@ DNS从设计上像是一个**分层的**、**分布式的**数据库，这和域
 
 下图展示了这一查询过程。
 
-![](https://raw.githubusercontent.com/ghh3809/ghh3809.github.io/master/_posts/_pic/20210317_dns.png)
+![](https://raw.githubusercontent.com/ghh3809/ghh3809.github.io/master/_posts/_pic/20210317_dns.jpg)
 
 显然，如果每次查询都经过这样的全部过程，那耗时将是不可接受的，因此**DNS缓存**应运而生。在整个DNS网络中，当某个DNS服务器接受到一个DNS应答时，它将在本地进行缓存，从而在未来的一段时间内（例如2天）对于同样的域名进行直接应答，从而减少请求的次数。
 
@@ -474,7 +474,7 @@ systemctl start named
 
 由于我们使用的是阿里云的服务器，因此还需要在控制台开启53端口的权限（注意DNS服务使用的是UDP协议哦）。
 
-![](https://raw.githubusercontent.com/ghh3809/ghh3809.github.io/master/_posts/_pic/20210317_aliyun.png)
+![](https://raw.githubusercontent.com/ghh3809/ghh3809.github.io/master/_posts/_pic/20210317_aliyun.jpg)
 
 最后我们尝试下外部访问：
 
