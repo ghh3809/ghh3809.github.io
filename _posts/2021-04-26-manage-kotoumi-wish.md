@@ -144,6 +144,8 @@ insert into kotoumi_genshin_wish_unit_map values (null, 105, 1022, 1);
 
 ### 3.1.2 当前角色信息
 
+角色信息的对象类型固定为1。
+
 | 角色ID | 角色类型 | 角色名称 | 角色稀有度 |
 | ------ | -------- | -------- | ---------- |
 | 1001 | 1 | 安柏 | 4 |
@@ -178,6 +180,8 @@ insert into kotoumi_genshin_wish_unit_map values (null, 105, 1022, 1);
 | 1030 | 1 | 罗莎莉亚 | 4 |
 
 ### 3.1.3 当前武器信息
+
+武器信息的对象类型固定为2。
 
 | 武器ID | 武器类型 | 武器名称 | 武器稀有度 |
 | ------ | -------- | -------- | ---------- |
@@ -243,6 +247,8 @@ insert into kotoumi_genshin_wish_unit_map values (null, 105, 1022, 1);
 
 ### 3.2 一次维护示例
 
+以1.4版本中第二轮卡池为例，更新卡池时需要提供以下两个卡池的文件。
+
 #### 3.2.1 公子复刻池
 
 ```sql
@@ -267,7 +273,7 @@ insert into kotoumi_genshin_wish_unit_map values (null, 105, 1007, 1);
 insert into kotoumi_genshin_wish_unit_map values (null, 105, 1012, 1);
 insert into kotoumi_genshin_wish_unit_map values (null, 105, 1030, 1);
 
--- 非up四星角色
+-- 非up四星角色，记得御三家不进up池
 insert into kotoumi_genshin_wish_unit_map values (null, 105, 1006, 0);
 insert into kotoumi_genshin_wish_unit_map values (null, 105, 1009, 0);
 insert into kotoumi_genshin_wish_unit_map values (null, 105, 1011, 0);
@@ -280,7 +286,7 @@ insert into kotoumi_genshin_wish_unit_map values (null, 105, 1018, 0);
 insert into kotoumi_genshin_wish_unit_map values (null, 105, 1023, 0);
 insert into kotoumi_genshin_wish_unit_map values (null, 105, 1025, 0);
 
--- 四星武器（这个一般不会变，copy就好）
+-- 四星武器（这个一般不会变，copy就好，注意修改卡池ID）
 insert into kotoumi_genshin_wish_unit_map values (null, 105, 2004, 0);
 insert into kotoumi_genshin_wish_unit_map values (null, 105, 2005, 0);
 insert into kotoumi_genshin_wish_unit_map values (null, 105, 2007, 0);
@@ -300,7 +306,7 @@ insert into kotoumi_genshin_wish_unit_map values (null, 105, 2044, 0);
 insert into kotoumi_genshin_wish_unit_map values (null, 105, 2045, 0);
 insert into kotoumi_genshin_wish_unit_map values (null, 105, 2048, 0);
 
--- 三星武器（这个一般不会变，copy就好）
+-- 三星武器（这个一般不会变，copy就好，注意修改卡池ID）
 insert into kotoumi_genshin_wish_unit_map values (null, 105, 2001, 0);
 insert into kotoumi_genshin_wish_unit_map values (null, 105, 2002, 0);
 insert into kotoumi_genshin_wish_unit_map values (null, 105, 2003, 0);
@@ -314,6 +320,86 @@ insert into kotoumi_genshin_wish_unit_map values (null, 105, 2033, 0);
 insert into kotoumi_genshin_wish_unit_map values (null, 105, 2040, 0);
 insert into kotoumi_genshin_wish_unit_map values (null, 105, 2041, 0);
 insert into kotoumi_genshin_wish_unit_map values (null, 105, 2042, 0);
+```
+
+### 3.2.2 天空之翼&四风原典武器池
+
+```sql
+-- 天空之翼&四风原典武器池卡池信息
+insert into kotoumi_genshin_wish_event values (204, '武器up', 'up武器：天空之翼、四风原典，非up武器：常驻池五星武器', 'up武器：暗巷猎手、西风剑、祭礼大剑、西风秘典、西风长枪，非up武器：常驻池四星', 2, '2021-04-06 18:00:00', '2021-04-27 14:59:59');
+
+-- 武器池添加暗巷猎手新武器
+insert into kotoumi_genshin_unit values (2059, 2, '暗巷猎手', 4);
+
+-- up五星武器：天空之翼、四风原典
+insert into kotoumi_genshin_wish_unit_map values (null, 204, 2032, 1);
+insert into kotoumi_genshin_wish_unit_map values (null, 204, 2049, 1);
+
+-- 非up五星武器
+insert into kotoumi_genshin_wish_unit_map values (null, 204, 2009, 0);
+insert into kotoumi_genshin_wish_unit_map values (null, 204, 2010, 0);
+insert into kotoumi_genshin_wish_unit_map values (null, 204, 2020, 0);
+insert into kotoumi_genshin_wish_unit_map values (null, 204, 2021, 0);
+insert into kotoumi_genshin_wish_unit_map values (null, 204, 2031, 0);
+insert into kotoumi_genshin_wish_unit_map values (null, 204, 2037, 0);
+insert into kotoumi_genshin_wish_unit_map values (null, 204, 2038, 0);
+insert into kotoumi_genshin_wish_unit_map values (null, 204, 2050, 0);
+
+-- up四星武器：暗巷猎手、西风剑、祭礼大剑、西风秘典、西风长枪
+insert into kotoumi_genshin_wish_unit_map values (null, 204, 2007, 1);
+insert into kotoumi_genshin_wish_unit_map values (null, 204, 2015, 1);
+insert into kotoumi_genshin_wish_unit_map values (null, 204, 2036, 1);
+insert into kotoumi_genshin_wish_unit_map values (null, 204, 2045, 1);
+insert into kotoumi_genshin_wish_unit_map values (null, 204, 2059, 1);
+
+-- 非up四星武器
+insert into kotoumi_genshin_wish_unit_map values (null, 204, 2004, 0);
+insert into kotoumi_genshin_wish_unit_map values (null, 204, 2005, 0);
+insert into kotoumi_genshin_wish_unit_map values (null, 204, 2008, 0);
+insert into kotoumi_genshin_wish_unit_map values (null, 204, 2016, 0);
+insert into kotoumi_genshin_wish_unit_map values (null, 204, 2017, 0);
+insert into kotoumi_genshin_wish_unit_map values (null, 204, 2018, 0);
+insert into kotoumi_genshin_wish_unit_map values (null, 204, 2026, 0);
+insert into kotoumi_genshin_wish_unit_map values (null, 204, 2027, 0);
+insert into kotoumi_genshin_wish_unit_map values (null, 204, 2028, 0);
+insert into kotoumi_genshin_wish_unit_map values (null, 204, 2029, 0);
+insert into kotoumi_genshin_wish_unit_map values (null, 204, 2034, 0);
+insert into kotoumi_genshin_wish_unit_map values (null, 204, 2043, 0);
+insert into kotoumi_genshin_wish_unit_map values (null, 204, 2044, 0);
+insert into kotoumi_genshin_wish_unit_map values (null, 204, 2048, 0);
+
+-- 四星角色，记得御三家不进up池（这个一般不会变，copy就好，但限定四星角色进常驻时注意更新，同时注意修改卡池ID）
+insert into kotoumi_genshin_wish_unit_map values (null, 204, 1001, 0);
+insert into kotoumi_genshin_wish_unit_map values (null, 204, 1002, 0);
+insert into kotoumi_genshin_wish_unit_map values (null, 204, 1003, 0);
+insert into kotoumi_genshin_wish_unit_map values (null, 204, 1006, 0);
+insert into kotoumi_genshin_wish_unit_map values (null, 204, 1007, 0);
+insert into kotoumi_genshin_wish_unit_map values (null, 204, 1009, 0);
+insert into kotoumi_genshin_wish_unit_map values (null, 204, 1011, 0);
+insert into kotoumi_genshin_wish_unit_map values (null, 204, 1012, 0);
+insert into kotoumi_genshin_wish_unit_map values (null, 204, 1013, 0);
+insert into kotoumi_genshin_wish_unit_map values (null, 204, 1014, 0);
+insert into kotoumi_genshin_wish_unit_map values (null, 204, 1015, 0);
+insert into kotoumi_genshin_wish_unit_map values (null, 204, 1016, 0);
+insert into kotoumi_genshin_wish_unit_map values (null, 204, 1017, 0);
+insert into kotoumi_genshin_wish_unit_map values (null, 204, 1018, 0);
+insert into kotoumi_genshin_wish_unit_map values (null, 204, 1023, 0);
+insert into kotoumi_genshin_wish_unit_map values (null, 204, 1025, 0);
+
+-- 三星武器（这个一般不会变，copy就好，注意修改卡池ID）
+insert into kotoumi_genshin_wish_unit_map values (null, 204, 2001, 0);
+insert into kotoumi_genshin_wish_unit_map values (null, 204, 2002, 0);
+insert into kotoumi_genshin_wish_unit_map values (null, 204, 2003, 0);
+insert into kotoumi_genshin_wish_unit_map values (null, 204, 2012, 0);
+insert into kotoumi_genshin_wish_unit_map values (null, 204, 2013, 0);
+insert into kotoumi_genshin_wish_unit_map values (null, 204, 2014, 0);
+insert into kotoumi_genshin_wish_unit_map values (null, 204, 2023, 0);
+insert into kotoumi_genshin_wish_unit_map values (null, 204, 2024, 0);
+insert into kotoumi_genshin_wish_unit_map values (null, 204, 2025, 0);
+insert into kotoumi_genshin_wish_unit_map values (null, 204, 2033, 0);
+insert into kotoumi_genshin_wish_unit_map values (null, 204, 2040, 0);
+insert into kotoumi_genshin_wish_unit_map values (null, 204, 2041, 0);
+insert into kotoumi_genshin_wish_unit_map values (null, 204, 2042, 0);
 ```
 
 ## 4. 致谢
