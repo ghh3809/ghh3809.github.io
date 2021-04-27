@@ -322,7 +322,7 @@ insert into kotoumi_genshin_wish_unit_map values (null, 105, 2041, 0);
 insert into kotoumi_genshin_wish_unit_map values (null, 105, 2042, 0);
 ```
 
-### 3.2.2 天空之翼&四风原典武器池
+#### 3.2.2 天空之翼&四风原典武器池
 
 ```sql
 -- 天空之翼&四风原典武器池卡池信息
