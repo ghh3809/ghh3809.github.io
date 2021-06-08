@@ -50,7 +50,7 @@ author: 风之筝
 
 在100box的抽卡中，累积抽卡次数和出货概率之间的关系显然是线性的：
 
-![](https://raw.githubusercontent.com/ghh3809/ghh3809.github.io/master/_posts/_pic/20190919_box_success_rate_with_count.jpg)
+![](https://raw.githubusercontent.com/ghh3809/ghh3809.github.io/master/_posts/_pic/20190919_box_success_rate_with_count.jpeg)
 
 我们假设，当卡池剩余N张卡时，在某个特定策略下，为了抽到UR，期望花费的心数是`E(N)`。由于我们仅考虑接下来11抽的抽卡策略，因此我们可以使得**11抽后的`E(N-11)`为一个定值**。那么我们分别采用方案1（11连）和方案2（11次单抽），则：
 
@@ -60,11 +60,11 @@ author: 风之筝
 
 显然，box的特定保证了我们在为了11次抽卡中，能抽到UR的概率为：`P_11 = 11/N`。因此，两种方案下抽到UR消耗心数的期望分别是：
 
-![](https://raw.githubusercontent.com/ghh3809/ghh3809.github.io/master/_posts/_pic/20190919_strategy_expectation.jpg)
+![](https://raw.githubusercontent.com/ghh3809/ghh3809.github.io/master/_posts/_pic/20190919_strategy_expectation.png)
 
 二者期望相同时即为分界点，因此得到：
 
-![](https://raw.githubusercontent.com/ghh3809/ghh3809.github.io/master/_posts/_pic/20190919_threshold.jpg)
+![](https://raw.githubusercontent.com/ghh3809/ghh3809.github.io/master/_posts/_pic/20190919_threshold.png)
 
 由此我们得到结论：<font color='red'>在卡池剩余张数大于55张时，应使用11连，否则应使用单抽。</font>
 
@@ -76,7 +76,7 @@ author: 风之筝
 
 用matlab模拟了一亿次box抽卡，分别采用不同的十一连次数策略，即前若干次抽卡用11连，之后转为单抽，得到的期望心数花费如下图所示：、
 
-![](https://raw.githubusercontent.com/ghh3809/ghh3809.github.io/master/_posts/_pic/20190919_average_loveca.jpg)
+![](https://raw.githubusercontent.com/ghh3809/ghh3809.github.io/master/_posts/_pic/20190919_average_loveca.jpeg)
 
 可见，**前四次11连或前5次11连**，即剩余张数为56/45时，平均花费的心数基本都是最低的，这也与我们计算的结果相吻合。不过同时也可以看到，即使是全部单抽这种“土豪行径”，从模拟结果上也只比最优策略多花了<font color='red'>5.87心</font>，所以千辛万苦，也就省下了一次单抽的资源。
 
@@ -84,7 +84,7 @@ author: 风之筝
 
 同样的，我们也可以对不同抽卡策略进行“风险分析”，即采用不同策略下平均抽卡花费心数的标准差：
 
-![](https://raw.githubusercontent.com/ghh3809/ghh3809.github.io/master/_posts/_pic/20190919_standard_error.jpg)
+![](https://raw.githubusercontent.com/ghh3809/ghh3809.github.io/master/_posts/_pic/20190919_standard_error.jpeg)
 
 图中看来的话，先抽5次11连这种方案，花费心数的标准差为<font color='red'>127心</font>，所以这种策略是一种**期望又高，风险又较低**的抽卡方式。
 
@@ -107,9 +107,9 @@ author: 风之筝
 
 绿券众所周知是不适合抽无限池的，如下图展示了**绿券抽box和无限池**得到的期望UR数及0UR概率：
 
-![](https://raw.githubusercontent.com/ghh3809/ghh3809.github.io/master/_posts/_pic/20190919_expect_ur.jpg)
+![](https://raw.githubusercontent.com/ghh3809/ghh3809.github.io/master/_posts/_pic/20190919_expect_ur.jpeg)
 
-![](https://raw.githubusercontent.com/ghh3809/ghh3809.github.io/master/_posts/_pic/20190919_prob_0u.jpg)
+![](https://raw.githubusercontent.com/ghh3809/ghh3809.github.io/master/_posts/_pic/20190919_prob_0u.jpeg)
 
 可见绿券无论从任何角度来说都应该投入到box中，而不是无限池。很有意思的地方是，在可重置box中，**期望UR数在低于100抽时是一个下凹的曲线，而在大于100抽后则变为一条过原点的直线**，这点后面如果有时间可以探讨下该形状形成的原因。
 
